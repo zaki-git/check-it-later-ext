@@ -1,0 +1,102 @@
+
+.main
+{
+	max-width: 600px;
+	background: aqua;
+}
+
+.add-new-container
+{
+    width: 600px;
+    min-height: 100px;
+    background: lightcyan;
+}
+	.add-new-panel
+	{
+		display: inline-block;
+        width: 100%;
+		min-height: 100px;
+    }
+	.add-button-tmp
+	{
+		width: 80px;
+		margin: 0px 0px auto auto;
+		border-radius: 5px;
+		padding: 5px;
+		display: block;
+	}
+    .item-title-text
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+.added-before-container
+{
+    min-height: 150px;
+    width: 600px;
+    background: lightgoldenrodyellow;
+}
+
+.added-before-list
+{
+    padding-left: 0px;
+    list-style-type: none;
+}
+    .added-before-list div
+    {
+        padding: 5px;
+    }
+
+    .added-before-list a:link, .added-before-list a:visited {
+        background-color: beige;
+        color: black;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        text-align: left;
+        padding: 0px;
+        width: 100%;
+    }
+    .list-item-title
+    {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    .added-before-list a:hover, .added-before-list a:active {
+        background-color:  lightsalmon;
+        color: darkslategrey;
+    }
+
+.delete-x
+{
+    width: 30px;
+    display: inline-block;
+    background: greenyellow;
+    text-align: center;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+.delete-item
+{
+    position: relative; float: right; bottom: 20px;
+}
+
+.tag
+{
+    padding: 2px; margin: 2px; border: thin solid #993300; display: inline-block; background-color: #E2EFCF;
+    cursor: pointer;
+}
+
+.select-tags-area
+{
+}

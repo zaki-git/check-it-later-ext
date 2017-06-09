@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+     <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+
+  <body>
+	
+	<div class="main">
+			
+		<div class="add-new-container">
+			<div class="add-new-panel">
+				<span class="item-title-lbl">Title </span><input type="text" class="item-title-text"><br>
+				<span class="item-url-lbl">Url: </span><span class="item-url"></span><br />
+                <span>Tags: </span>
+                <div class="item-tags">
+
+                </div>
+			</div>
+            <br />
+
+            <span>Select a tag:</span><br />
+            <div class="select-tags-area">
+                <div class="tag">
+                    <span class="tag-text">Tech </span><span class='delete-x'>X</span>
+                </div>
+                <div class="tag">
+                    <span>Entertainment </span><span class='delete-x'>X</span>
+                </div>
+
+            </div>
+            <br />
+
+            <span>Tag suggestions from page:</span>
+            <div class="tags-suggestion-area">
+                <span style="color: red">No suggestions available for this page.</span>
+            </div> <br />
+
+            <div class="add-new-tag-area" style="vertical-align:central; height:50px;">
+                <span style="padding: 0px">Create new tag: </span>
+                <input type="text" class="add-tag-input" placeholder="enter tag name" />
+                <button class="add-tag-button">Add!</button>
+            </div>
+			<button class="add-button">Add this page!</button>
+            <button class="clear-button">Clear all</button>
+		</div>
+		
+		<div class="added-before-container">
+			<ul class="added-before-list">
+				<li class='list-item'>
+                    <a href="http://www.google.com">
+                        <div>
+                            <span class='list-item-tile'>Some title of the page</span> <span class="delete-x delete-item">X</span><br />
+                            <span class='list-item-url'>http://somedummyurl.com?x=alskfkasdjfasdasjdfabsdfbasdkfjk</span><br />
+                            <div class="list-item-tags">
+                                <div class="tag">
+                                    <span class="tag-text">Tech </span><span class='delete-x'>X</span>
+                                </div>
+                                <div class="tag">
+                                    <span>Entertainment </span><span class='delete-x'>X</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>     			
+				<li>item 2</li>			
+				<li>item 3</li>			
+				<li>item 4</li>			
+			</ul>
+		</div>
+	</div>
+	
+  </body>
+</html>
+

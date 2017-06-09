@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Check it later!",
+  "description": "This extension saves your web pages for reading later.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon64.png",
+    "default_title": "Check it later!",
+    "default_popup": "popup.html"
+  },
+  
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ]
+}
